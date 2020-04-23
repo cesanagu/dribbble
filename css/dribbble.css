@@ -10,11 +10,22 @@ nav{
   height: 80px;
   border-bottom: 1px solid #444;
   color: #6e6d7a;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo{
-  width: 60px;
-  height: 40px;
+  width: 80px;
+  height: 30px;
+  padding: 10px;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.menu-left{
+  display: flex;
 }
 
 .left ol{
@@ -30,29 +41,54 @@ nav{
   list-style: none;
 }
 
+.menu-right{
+  display: flex;
+}
+
 .right{
   display: flex;
 }
 
+.right img{
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+}
+
+.right p{
+  padding: 0px 10px;
+}
+
 .sup{
   background-color: #ea4c89;
+  margin-right: 10px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  height: 40px;
+  padding: 10px;
 }
 
 .adobe{
-  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
 .adobe-promo{
   display: grid;
-  grid-template-columns: 70px 150px 70px;
+  grid-template-columns: 150px 350px 100px;
   align-content: center;
-  grid-template-areas: "a-img a-description a-button"
+  grid-template-areas: "a-img a-description a-button";
+  margin: 40px 0px;
 }
 
 .adobe-img{
   grid-area: a-img;
-  width: 70px;
+  width: 130px;
   height: 30px;
+}
+
+.adobe-img img{
+  width: 100%;
 }
 
 .adobe-description{
@@ -63,14 +99,18 @@ nav{
 
 .adobe-description span:nth-child(1){
   color: #000;
+  font-size: 13px;
 }
 
-.adobe-description span:nth-child(1){
+.adobe-description span:nth-child(2){
   color: #6e6d7a;
+  font-size: 11px;
 }
 
 .adobe-button{
   grid-area: a-button;
   padding: 10px;
   background-color: #f3f3f4;
+  border: none;
+  border-radius: 5px;
 }
