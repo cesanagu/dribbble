@@ -1,6 +1,94 @@
 body{
   padding: 0;
   margin: 0;
+}
+
+main{
+  display: grid;
+  grid-template-rows: 70px 150px 300px;
+  grid-template-columns: 1fr;
+  border: 2px solid red;
+}
+
+.search{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid red;
+}
+
+.search input{
+  border: 2px solid red;
+}
+
+.search div{
+  border: 2px solid red;
+}
+
+.wallet{
+  display: grid;
+  grid-auto-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  border: 2px solid red;
+}
+
+.wallet div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px solid red;
+}
+
+.wallet div:nth-child(2), .wallet div:nth-child(3){
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.wallet div:nth-child(2) img, .wallet div:nth-child(3) img{
+  width: 70px;
+  height: 50px;
+  border: 2px solid red;
+}
+
+.stats{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border: 2px solid red;
+}
+
+.stats div:nth-child(1){
+  border: 2px solid red;
+}
+
+.stats div:nth-child(2){
+  border: 2px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+  padding: 0;
+  margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
@@ -113,4 +201,4 @@ nav{
   background-color: #f3f3f4;
   border: none;
   border-radius: 5px;
-}
+} */
